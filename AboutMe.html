@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/Me.jpg" alt="Ron Jordan">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> <a href="index.html">About Me</a></h1>
+                    <p>Hello! I'm Ron Jordan Bautista a 21-year-old, 3rd-year student at PUPSMB, pursuing my passion for web development. I have always been fascinated by the digital world, and my goal is to become a frontend developer. When I'm not buried in code or studying, you can find me at the local billiards hall, honing my skills and enjoying friendly competition. I'm also an avid basketball player, hitting the court whenever I get the chance. And of course, I'm an enthusiastic gamer, exploring virtual worlds and challenging myself with different gaming experiences. Combining my love for technology and creativity, I'm constantly seeking new ways to improve user experiences through intuitive and visually appealing websites. I'm excited to continue my journey and make a positive impact in the world of frontend development!</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android and IOS app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2018</span><br>UI/UX design training Institute</li>
+                            <li><span>2021</span><br>Team Lead at Capstone</li>
+                            <li><span>2023</span><br>Internship at PUPSMB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014</span><br>San Jose Patag elementary Schookl</li>
+                            <li><span>2018</span><br>Catmon National School</li>
+                            <li><span>2020</span><br>FFHNAS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+</body>
+</html>
