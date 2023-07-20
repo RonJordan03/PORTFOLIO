@@ -13,7 +13,7 @@ body{
 .main{
     width: 100vw;
     height: 100vh;
-    background-image: url('/img/background.jpg');
+    background-image: url('img/background.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -112,7 +112,7 @@ nav h1{
 }
 
 .home{
-    margin-left: 25rem;
+    margin-left: 10rem;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -124,19 +124,19 @@ nav h1{
 }
 
 .home-content h1{
-    font-size: 56px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 700;
     color: #00abf0;
 }
 
 .home-content p {
-    font-size: 16px;
+    font-size: 10px;
     margin: 20px 0 40px;
 }
 
@@ -161,7 +161,7 @@ nav h1{
     background-color: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
-    font-size: 19px;
+    font-size: 10px;
     color: #081b29;
     text-decoration: none;
     font-weight: 600;
@@ -257,7 +257,7 @@ nav h1{
     background: #081b29;
     width: 100vw;
     height: 100vh;
-    font-size: 28px;
+    font-size: 10px;
 }
 
 .row {
